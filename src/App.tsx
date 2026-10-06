@@ -1,5 +1,6 @@
 import './App.css'
 import Navbar from './Navbar'
+import About from './About'
 import { ArrowRight, BadgeCheck, Calculator, FileText, Landmark } from 'lucide-react'
 
 function App() {
@@ -58,7 +59,6 @@ function App() {
           </div>
 
           <div className="hero-visual">
-
             <div className="visual-glow"></div>
 
             <div className="finance-card">
@@ -68,9 +68,7 @@ function App() {
                   <h3>Taxation & Accounts</h3>
                 </div>
 
-                <div className="finance-logo">
-                  VN
-                </div>
+                <div className="finance-logo">VN</div>
               </div>
 
               <div className="finance-divider"></div>
@@ -79,7 +77,6 @@ function App() {
                 <div className="service-icon">
                   <Calculator size={20} />
                 </div>
-
                 <div>
                   <span>Taxation</span>
                   <p>Professional assistance</p>
@@ -90,7 +87,6 @@ function App() {
                 <div className="service-icon">
                   <Landmark size={20} />
                 </div>
-
                 <div>
                   <span>Accounting</span>
                   <p>Organised financial support</p>
@@ -101,7 +97,6 @@ function App() {
                 <div className="service-icon">
                   <FileText size={20} />
                 </div>
-
                 <div>
                   <span>Documentation</span>
                   <p>Simple & reliable process</p>
@@ -112,11 +107,13 @@ function App() {
                 Panaji, Goa
               </div>
             </div>
-
           </div>
 
         </div>
       </section>
+
+      <About />
+
     </main>
   )
 }

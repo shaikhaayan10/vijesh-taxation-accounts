@@ -411,3 +411,154 @@ a {
     padding: 22px;
   }
 }
+
+/* ABOUT & PURPOSE SECTION */
+
+.about-section {
+  padding: 110px 24px;
+  background: #ffffff;
+}
+
+.about-container {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.section-heading {
+  max-width: 720px;
+  margin-bottom: 55px;
+}
+
+.section-label {
+  margin: 0 0 15px;
+  color: #a88442;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.section-heading h2 {
+  margin: 0;
+  color: #14213d;
+  font-size: 46px;
+  line-height: 1.15;
+  letter-spacing: -1.5px;
+}
+
+.section-heading h2 span {
+  color: #a88442;
+}
+
+.section-heading > p:last-child {
+  margin: 20px 0 0;
+  color: #667085;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr 1fr;
+  gap: 20px;
+}
+
+.about-card,
+.purpose-card {
+  border: 1px solid #ebe8df;
+  border-radius: 18px;
+  padding: 30px;
+}
+
+.main-about-card {
+  background: #14213d;
+  color: white;
+}
+
+.about-icon,
+.purpose-icon {
+  width: 48px;
+  height: 48px;
+  display: grid;
+  place-items: center;
+  border-radius: 12px;
+}
+
+.about-icon {
+  background: rgba(255,255,255,0.1);
+  color: #d7b66f;
+}
+
+.purpose-icon {
+  background: #f2ecdf;
+  color: #9a7635;
+}
+
+.about-card h3,
+.purpose-card h3 {
+  margin: 25px 0 12px;
+  font-size: 21px;
+}
+
+.about-card p {
+  color: #c7cedb;
+  line-height: 1.7;
+}
+
+.purpose-card {
+  position: relative;
+  background: #faf9f6;
+}
+
+.purpose-card p:last-child {
+  color: #667085;
+  line-height: 1.7;
+}
+
+.purpose-number {
+  position: absolute;
+  right: 25px;
+  top: 19px;
+  margin: 0;
+  color: #ddd5c5;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.about-points {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+
+.about-points div {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  color: #e9edf3;
+  font-size: 14px;
+}
+
+.about-points svg {
+  color: #d7b66f;
+}
+
+@media (max-width: 900px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section-heading h2 {
+    font-size: 38px;
+  }
+}
+
+@media (max-width: 600px) {
+  .about-section {
+    padding: 75px 18px;
+  }
+
+  .section-heading h2 {
+    font-size: 32px;
+  }
+}
