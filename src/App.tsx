@@ -1,9 +1,12 @@
 import './App.css'
+import Navbar from './Navbar'
 
 function App() {
   return (
     <main className="app">
-      <div className="hero">
+      <Navbar />
+
+      <section className="hero" id="home">
         <p className="eyebrow">Professional Taxation & Accounting Services</p>
 
         <h1>Vijesh Naique</h1>
@@ -11,11 +14,14 @@ function App() {
         <h2>Taxation & Accounts</h2>
 
         <p className="description">
-          A professional accounting and taxation service based in Panaji, Goa.
+          Professional support for taxation, accounting and financial documentation
+          in Panaji, Goa.
         </p>
 
-        <button>Website Coming Soon</button>
-      </div>
+        <a className="hero-button" href="#contact">
+          Get in Touch
+        </a>
+      </section>
     </main>
   )
 }
