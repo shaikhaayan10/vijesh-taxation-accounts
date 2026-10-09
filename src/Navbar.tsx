@@ -9,7 +9,7 @@ function Navbar() {
 
           <div>
             <h3>Vijesh Naique</h3>
-            <p>Taxation & Accounts</p>
+            <p>Tax Practitioner</p>
           </div>
         </div>
 
@@ -20,9 +20,7 @@ function Navbar() {
           <a href="#contact">Contact</a>
         </nav>
 
-        <a className="nav-cta" href="#contact">
-          Get in Touch
-        </a>
+        
 
         <button className="menu-button" aria-label="Open menu">
           <Menu size={22} />
@@ -33,3 +31,6 @@ function Navbar() {
 }
 
 export default Navbar;
+
+
+
