@@ -1,7 +1,5 @@
 import './App.css'
 import Navbar from './Navbar'
-import About from './About'
-import Services from './Services'
 import Contact from './Contact'
 import { ArrowRight, BadgeCheck, Calculator, FileText, Landmark } from 'lucide-react'
 
@@ -114,8 +112,6 @@ function App() {
         </div>
       </section>
 
-      <About />
-      <Services />
       <Contact />
 
     </main>
@@ -123,6 +119,8 @@ function App() {
 }
 
 export default App
+
+
 
 
 
