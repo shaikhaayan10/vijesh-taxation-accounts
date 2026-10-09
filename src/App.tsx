@@ -2,6 +2,7 @@ import './App.css'
 import Navbar from './Navbar'
 import About from './About'
 import Services from './Services'
+import Contact from './Contact'
 import { ArrowRight, BadgeCheck, Calculator, FileText, Landmark } from 'lucide-react'
 
 function App() {
@@ -15,14 +16,14 @@ function App() {
           <div className="hero-content">
             <div className="hero-badge">
               <BadgeCheck size={17} />
-              Trusted Taxation & Accounting Support
+              Professional Tax Practitioner
             </div>
 
-            <p className="eyebrow">Professional Financial Assistance</p>
+            <p className="eyebrow">Tax & Compliance Services</p>
 
             <h1>
-              Reliable Taxation &
-              <span> Accounting Services</span>
+              Clarity in every
+              <span> number.</span>
             </h1>
 
             <p className="description">
@@ -32,12 +33,12 @@ function App() {
 
             <div className="hero-actions">
               <a className="hero-button primary" href="#contact">
-                Get in Touch
+                Request Tax Assistance
                 <ArrowRight size={18} />
               </a>
 
               <a className="hero-button secondary" href="#services">
-                Explore Services
+                View Services
               </a>
             </div>
 
@@ -66,7 +67,7 @@ function App() {
               <div className="finance-card-header">
                 <div>
                   <p>Vijesh Naique</p>
-                  <h3>Taxation & Accounts</h3>
+                  <h3>Professional Tax Services</h3>
                 </div>
 
                 <div className="finance-logo">VN</div>
@@ -79,8 +80,8 @@ function App() {
                   <Calculator size={20} />
                 </div>
                 <div>
-                  <span>Taxation</span>
-                  <p>Professional assistance</p>
+                  <span>GST</span>
+                  <p>GST filing & compliance support</p>
                 </div>
               </div>
 
@@ -89,8 +90,8 @@ function App() {
                   <Landmark size={20} />
                 </div>
                 <div>
-                  <span>Accounting</span>
-                  <p>Organised financial support</p>
+                  <span>Income Tax</span>
+                  <p>Income tax return assistance</p>
                 </div>
               </div>
 
@@ -99,8 +100,8 @@ function App() {
                   <FileText size={20} />
                 </div>
                 <div>
-                  <span>Documentation</span>
-                  <p>Simple & reliable process</p>
+                  <span>TDS/TCS Returns</span>
+                  <p>Return preparation & filing support</p>
                 </div>
               </div>
 
@@ -115,10 +116,14 @@ function App() {
 
       <About />
       <Services />
+      <Contact />
 
     </main>
   )
 }
 
 export default App
+
+
+
 

@@ -2,48 +2,55 @@ import {
   Calculator,
   ReceiptText,
   FileSpreadsheet,
-  BriefcaseBusiness,
+  Landmark,
   FileCheck2,
-  Headphones
+  ClipboardCheck,
+  BadgeDollarSign
 } from "lucide-react";
 
 function Services() {
   const services = [
     {
-      icon: <Calculator size={24} />,
-      title: "Taxation Assistance",
-      description:
-        "Professional assistance for general taxation-related requirements, documents and processes."
-    },
-    {
-      icon: <FileSpreadsheet size={24} />,
-      title: "Accounting Support",
-      description:
-        "Support for maintaining organised financial records and basic accounting requirements."
-    },
-    {
       icon: <ReceiptText size={24} />,
-      title: "Financial Documentation",
+      title: "GST",
       description:
-        "Assistance in preparing, organising and managing important financial documents."
+        "GST filing, compliance and return assistance."
     },
     {
-      icon: <BriefcaseBusiness size={24} />,
-      title: "Business Support",
+      icon: <Landmark size={24} />,
+      title: "Income Tax",
       description:
-        "General accounting and documentation support for professionals and businesses."
+        "Support for income tax returns and related requirements."
+    },
+    {
+      icon: <Calculator size={24} />,
+      title: "VAT",
+      description:
+        "Professional assistance for VAT-related work."
     },
     {
       icon: <FileCheck2 size={24} />,
-      title: "Document Review",
+      title: "TDS/TCS Returns",
       description:
-        "Help with checking and organising documents required for financial and taxation work."
+        "Help with preparation and filing of TDS/TCS returns."
     },
     {
-      icon: <Headphones size={24} />,
-      title: "Client Assistance",
+      icon: <FileSpreadsheet size={24} />,
+      title: "Accounting",
       description:
-        "Simple guidance and support to help clients understand the required process."
+        "Organised accounting and financial record support."
+    },
+    {
+      icon: <ClipboardCheck size={24} />,
+      title: "Auditing",
+      description:
+        "Professional audit-related assistance."
+    },
+    {
+      icon: <BadgeDollarSign size={24} />,
+      title: "Taxation",
+      description:
+        "General taxation support and compliance assistance."
     }
   ];
 
@@ -55,13 +62,13 @@ function Services() {
           <p className="section-label">OUR SERVICES</p>
 
           <h2>
-            Professional Support for
-            <span> Financial Requirements.</span>
+            Professional Tax &amp;
+            <span> Compliance Services.</span>
           </h2>
 
           <p>
-            A simple and organised approach to taxation, accounting and
-            financial documentation assistance.
+            Professional assistance for taxation, compliance,
+            accounting and audit-related requirements.
           </p>
         </div>
 
@@ -74,7 +81,7 @@ function Services() {
                 </div>
 
                 <span className="service-card-number">
-                  0{index + 1}
+                  {String(index + 1).padStart(2, "0")}
                 </span>
               </div>
 

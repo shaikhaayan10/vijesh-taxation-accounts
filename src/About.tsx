@@ -9,7 +9,7 @@ function About() {
           <p className="section-label">ABOUT US</p>
 
           <h2>
-            Professional Financial Support,
+            Professional Tax Practitioner,
             <span> Made Simple.</span>
           </h2>
 
@@ -43,7 +43,7 @@ function About() {
 
               <div>
                 <CircleCheck size={17} />
-                Simple documentation process
+                Simple tax & compliance process
               </div>
 
               <div>
@@ -92,3 +92,4 @@ function About() {
 }
 
 export default About;
+
