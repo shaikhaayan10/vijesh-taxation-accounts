@@ -1,4 +1,4 @@
-import { useState } from "react";
+﻿import { useState } from "react";
 import { MessageCircle, Phone, Mail, MapPin } from "lucide-react";
 
 function Contact() {
@@ -165,3 +165,5 @@ Message: ${message}
 }
 
 export default Contact;
+
+
