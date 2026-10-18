@@ -1,22 +1,20 @@
-import { Building2, CircleCheck, Users, MonitorSmartphone } from "lucide-react";
+﻿import { Building2, CircleCheck, Users, MonitorSmartphone } from "lucide-react";
 
 function About() {
   return (
-    <section className="about-section" id="about">
+    <section className="about-section about-figma" id="about">
       <div className="about-container">
 
         <div className="section-heading">
           <p className="section-label">ABOUT US</p>
 
           <h2>
-            Professional Financial Support,
-            <span> Made Simple.</span>
+            PROFESSIONAL TAX PRACTITIONER,
+            <span> made simple.</span>
           </h2>
 
           <p>
-            Vijesh Naique Taxation & Accounts provides professional assistance
-            for taxation, accounting, financial documentation and related
-            requirements in Panaji, Goa.
+            Vijesh Naique provides professional tax practitioner services for individuals, professionals and businesses, including GST, Income Tax, VAT, TDS/TCS Returns, Accounting, Auditing and Taxation.
           </p>
         </div>
 
@@ -30,9 +28,7 @@ function About() {
             <h3>About the Business</h3>
 
             <p>
-              Our aim is to make taxation and accounting-related processes
-              easier to understand and manage by providing reliable and
-              organised professional assistance.
+              Our aim is to make tax, accounting and compliance-related processes easier to understand and manage through professional and reliable assistance.
             </p>
 
             <div className="about-points">
@@ -43,7 +39,7 @@ function About() {
 
               <div>
                 <CircleCheck size={17} />
-                Simple documentation process
+                Simple tax & compliance process
               </div>
 
               <div>
@@ -63,9 +59,7 @@ function About() {
             <h3>Website Purpose</h3>
 
             <p>
-              To create a professional online presence where customers can
-              learn about available services and easily contact the office for
-              assistance.
+              To create a professional online presence where clients can understand the services offered and easily contact the office for tax and compliance assistance.
             </p>
           </div>
 
@@ -79,16 +73,26 @@ function About() {
             <h3>Who Is It For?</h3>
 
             <p>
-              Individuals, professionals and businesses looking for convenient
-              taxation, accounting and documentation assistance.
+              Individuals, professionals and businesses looking for convenient tax, accounting, auditing and compliance assistance.
             </p>
           </div>
 
         </div>
 
       </div>
+      <div className="about-bottom-strip">
+        <div>
+          <strong>Vijesh Naique</strong>
+          <span>Tax Practitioner</span>
+        </div>
+        <a href="#contact">Get in Touch</a>
+      </div>
     </section>
   );
 }
 
 export default About;
+
+
+
+

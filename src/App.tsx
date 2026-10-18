@@ -1,7 +1,9 @@
-import './App.css'
+﻿import './App.css'
 import Navbar from './Navbar'
 import About from './About'
 import Services from './Services'
+import Contact from './Contact'
+import Footer from './Footer'
 import { ArrowRight, BadgeCheck, Calculator, FileText, Landmark } from 'lucide-react'
 
 function App() {
@@ -9,35 +11,34 @@ function App() {
     <main className="app">
       <Navbar />
 
-      <section className="hero" id="home">
+      <section className="hero home-prototype" id="home">
         <div className="hero-container">
 
           <div className="hero-content">
             <div className="hero-badge">
               <BadgeCheck size={17} />
-              Trusted Taxation & Accounting Support
+              Professional Tax Practitioner
             </div>
 
-            <p className="eyebrow">Professional Financial Assistance</p>
+            <p className="eyebrow">Tax & Compliance Services</p>
 
             <h1>
-              Reliable Taxation &
-              <span> Accounting Services</span>
+              Clarity in every
+              <span> number.</span>
             </h1>
 
             <p className="description">
-              Professional assistance for taxation, accounts, documentation and
-              financial requirements in Panaji, Goa.
+              Professional assistance for GST, Income Tax, VAT, TDS/TCS Returns, Accounting, Auditing and Taxation in Panaji, Goa.
             </p>
 
             <div className="hero-actions">
               <a className="hero-button primary" href="#contact">
-                Get in Touch
+                Request Tax Assistance
                 <ArrowRight size={18} />
               </a>
 
               <a className="hero-button secondary" href="#services">
-                Explore Services
+                View Services
               </a>
             </div>
 
@@ -62,11 +63,11 @@ function App() {
           <div className="hero-visual">
             <div className="visual-glow"></div>
 
-            <div className="finance-card">
+            <div className="finance-card home-panel">
               <div className="finance-card-header">
                 <div>
                   <p>Vijesh Naique</p>
-                  <h3>Taxation & Accounts</h3>
+                  <h3>Tax &amp; Compliance Services</h3>
                 </div>
 
                 <div className="finance-logo">VN</div>
@@ -79,8 +80,8 @@ function App() {
                   <Calculator size={20} />
                 </div>
                 <div>
-                  <span>Taxation</span>
-                  <p>Professional assistance</p>
+                  <span>GST</span>
+                  <p>GST filing & compliance support</p>
                 </div>
               </div>
 
@@ -89,8 +90,8 @@ function App() {
                   <Landmark size={20} />
                 </div>
                 <div>
-                  <span>Accounting</span>
-                  <p>Organised financial support</p>
+                  <span>Income Tax</span>
+                  <p>Income tax return assistance</p>
                 </div>
               </div>
 
@@ -99,8 +100,8 @@ function App() {
                   <FileText size={20} />
                 </div>
                 <div>
-                  <span>Documentation</span>
-                  <p>Simple & reliable process</p>
+                  <span>TDS/TCS Returns</span>
+                  <p>Return preparation & filing support</p>
                 </div>
               </div>
 
@@ -111,14 +112,74 @@ function App() {
           </div>
 
         </div>
+
+        <div className="home-offers">
+          <p className="home-offers-label">OUR EXPERTISE</p>
+          <h2>Everything you need, in one place.</h2>
+
+          <div className="home-offers-grid">
+            <a href="#services" className="home-offer-card">
+              <Calculator size={18} />
+              <span>GST</span>
+            </a>
+
+            <a href="#services" className="home-offer-card">
+              <Landmark size={18} />
+              <span>Income Tax</span>
+            </a>
+
+            <a href="#services" className="home-offer-card">
+              <FileText size={18} />
+              <span>VAT</span>
+            </a>
+
+            <a href="#services" className="home-offer-card">
+              <FileText size={18} />
+              <span>TDS/TCS Returns</span>
+            </a>
+
+            <a href="#services" className="home-offer-card">
+              <Calculator size={18} />
+              <span>Accounting</span>
+            </a>
+
+            <a href="#services" className="home-offer-card">
+              <BadgeCheck size={18} />
+              <span>Auditing</span>
+            </a>
+
+            <a href="#services" className="home-offer-card">
+              <Landmark size={18} />
+              <span>Taxation</span>
+            </a>
+          </div>
+        </div>
+        <div className="home-bottom-strip">
+          <span>Vijesh Naique | Tax Practitioner</span>
+          <a href="#contact">Get in Touch</a>
+        </div>
+
       </section>
 
       <About />
       <Services />
+      <Contact />
+      <Footer />
 
     </main>
   )
 }
 
 export default App
+
+
+
+
+
+
+
+
+
+
+
 

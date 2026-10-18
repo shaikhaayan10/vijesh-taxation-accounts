@@ -1,32 +1,38 @@
-import { Menu } from "lucide-react";
+﻿import { useState } from "react";
+import { Menu, X } from "lucide-react";
 
 function Navbar() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     <header className="navbar">
       <div className="navbar-container">
-        <div className="brand">
-          <span className="brand-mark">VN</span>
 
+        <a href="#home" className="brand">
+          <span className="brand-mark">VN</span>
           <div>
             <h3>Vijesh Naique</h3>
-            <p>Taxation & Accounts</p>
+            <p>Tax Practitioner</p>
           </div>
-        </div>
-
-        <nav className="nav-links">
-          <a href="#home">Home</a>
-          <a href="#about">About</a>
-          <a href="#services">Services</a>
-          <a href="#contact">Contact</a>
-        </nav>
-
-        <a className="nav-cta" href="#contact">
-          Get in Touch
         </a>
 
-        <button className="menu-button" aria-label="Open menu">
-          <Menu size={22} />
+        <nav className={`nav-links ${menuOpen ? "nav-open" : ""}`}>
+          <a href="#home" onClick={() => setMenuOpen(false)}>Home</a>
+          <a href="#about" onClick={() => setMenuOpen(false)}>About</a>
+          <a href="#services" onClick={() => setMenuOpen(false)}>Services</a>
+          <a href="#contact" onClick={() => setMenuOpen(false)}>Contact</a>
+        </nav>
+
+        <button
+          className="menu-button"
+          type="button"
+          aria-label={menuOpen ? "Close menu" : "Open menu"}
+          aria-expanded={menuOpen}
+          onClick={() => setMenuOpen(!menuOpen)}
+        >
+          {menuOpen ? <X size={22} /> : <Menu size={22} />}
         </button>
+
       </div>
     </header>
   );
